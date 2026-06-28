@@ -114,3 +114,12 @@
   114  dnf download --destdir=/tmp tcpdump.x86_64
   115  cp /tmp/tcpdump-4.99.6-2.fc43.x86_64.rpm ~/mephi-session-project-2026/tcpdump.rpm 
   116  history > ~/mephi-session-project-2026/project_history.txt 
+  117  git add .
+  118  cd mephi-session-project-2026/
+  119  git add .
+  120  git push
+  121  git commit -m "fixes"
+  122  git push
+  123  dnf download --destdir=/tmp tcpdump.x86_64
+  124  sudo rpm -Uvh --replacepkgs /tmp/tcpdump-4.99.6-2.fc43.x86_64.rpm 
+  125  history > ~/mephi-session-project-2026/project_history.txt 
